@@ -1,0 +1,47 @@
+@mixin PoppinsText($weight, $size, $color: white, $uppercase: none) {
+  color: $color;
+  font-family: Poppins;
+  text-transform: $uppercase;
+  font-weight: $weight;
+  font-size: $size;
+  letter-spacing: 0;
+}
+
+@mixin DmSansText(
+  $weight,
+  $size,
+  $color: $black-color-medium,
+  $uppercase: none
+) {
+  color: $color;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  text-transform: $uppercase;
+
+  letter-spacing: 0;
+}
+
+@mixin flex($items: center, $justify: center, $direction: column) {
+  display: flex;
+  align-items: $items;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin absolute($top: 0, $left: 0, $right: 0, $bottom: 0) {
+  content: "";
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin img($url, $position1: center, $position2: center, $size: cover) {
+  background-image: url($url);
+  background-position: $position1, $position2;
+  background-size: $size;
+}
+
+

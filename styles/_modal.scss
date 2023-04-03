@@ -1,0 +1,39 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 50;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  &-content {
+    position: relative;
+    background-color: $white-color-100;
+    margin: auto;
+    padding: 10vw;
+    border: 1px solid $gray-color-200;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  &-information {
+    font-size: 5vw;
+  }
+}
+.close {
+  color: $gray-color-200;
+  @include absolute(20px, none, 40px);
+  font-size: 5vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: $black-color;
+  text-decoration: none;
+  cursor: pointer;
+}

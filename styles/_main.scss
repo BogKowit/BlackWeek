@@ -1,0 +1,44 @@
+.main {
+  width: 1920px;
+  display: flex;
+  box-sizing: border-box;
+}
+.information {
+  width: 960px;
+  height: 755px;
+  @include flex(end, space-between);
+  &-wrapper {
+    width: 730px;
+  }
+  &-topic {
+    margin-top: 110px;
+    @include DmSansText(bold, 52px, black);
+  }
+
+  &-date {
+    @include DmSansText(500, 52px, black);
+    position: relative;
+
+    &::after {
+      @include absolute(90px, 0);
+      background: #cabf9a;
+      width: 60px;
+      height: 2px;
+    }
+  }
+  &-discription {
+    @include DmSansText(500, 18px, $black-color-medium);
+    opacity: 0.8;
+    width: 620px;
+    line-height: 120%;
+    margin-top: 80px;
+  }
+  &-highlight {
+    color: #a79977;
+  }
+  &-image {
+    width: 830px;
+    height: 100px;
+    @include img("/images/copule.png");
+  }
+}

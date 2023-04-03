@@ -1,0 +1,65 @@
+.header {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &-wrapper-main {
+    width: 78%;
+    height: auto;
+    padding-top: 60px;
+  }
+
+  &-topic {
+    @include PoppinsText(900, 100%, white, uppercase);
+    width: 100%;
+    font-size: 27.25rem;
+    background-image: url("/images/buildings.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-discription {
+    @include PoppinsText(900, 200px, white, uppercase);
+  }
+  &-date {
+    @include PoppinsText(500, 46px, white, uppercase);
+    @include flex;
+    line-height: 120%;
+    text-align: center;
+    transform: rotate(10deg);
+    border: $gold-color 6px solid;
+    width: 290px;
+    height: 160px;
+    margin-left: 40px;
+  }
+  &-wrapper-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+  &:before,
+  &:after {
+    height: 800px;
+    width: 1920px;
+  }
+  &:before {
+    @include absolute;
+    background-image: url("/images/buildings.png");
+    background-position: center, center;
+    opacity: 0.1;
+    z-index: -10;
+    filter: grayscale(1);
+  }
+  &:after {
+    @include absolute;
+    background: $black-color;
+    z-index: -20;
+  }
+}

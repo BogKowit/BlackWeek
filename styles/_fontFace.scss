@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+}
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+}
+/* Font/text values */
+$font-family-dm-sans: DM Sans;
+$font-style-normal: normal;
+$font-weight-bold: bold;
+$font-weight-medium: medium;
+$font-weight-normal: normal;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-40: 40px;
+$font-size-52: 52px;
+$character-spacing-0: 0px;
+$line-spacing-20: 20px;
+$line-spacing-24: 24px;
+$line-spacing-28: 28px;
+$line-spacing-44: 44px;
+$line-spacing-63: 63px;
+$line-spacing-64: 64px;
+$text-transform-uppercase: uppercase;
+
+@mixin text(
+  $font-family: Poppins,
+  $style: $font-style-normal,
+  $weight,
+  $size,
+  $line-height: 0px,
+  $spacing: $line-spacing-20,
+  $uppercase: none,
+  $color: white
+) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: 0;
+  text-transform: $uppercase;
+  color: $color;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+  font-family: var(--unnamed-font-family-dm-sans);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-20);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <title>Black Week</title>
+  </head>
+  <body>
+   <!-- HERO -->
+   
+    <header class="header">
+      <div class="header-wrapper-main">
+        <p class="header-topic">black</p>
+        <div class="header-wrapper-bottom">
+          <p class="header-discription">week</p>
+          <p class="header-date">tylko do 30.11.2022</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- INFORMATION -->
+    
+    <main class="main">
+
+      <section class="information">
+        <div class="information-wrapper">
+          <h1 class="information-topic">Black Week 
+          </h1>
+          <h2 class="information-date">
+            tylko do 30.11.2022
+          </h2>
+          <p class="information-discription">Spośród 479 lokali mieszkalnych 
+            <span class="information-highlight">
+              wyróżniliśmy 120 mieszkań oraz 5 domów <br>
+              w promocyjnej cenie 
+            </span>
+            zlokalizowanych na 7 naszych inwestycjach: Katowice, Apatamenty Barbary,  Katowice, ul. Asnyka. Katowice, ul. Kornasa, Chorzów, ul. 17-<br>go sierpnia, Knurów Aleja Lipowa II, Chrzanów, ul. Śląska, Oświęcim, ul. Willowa.</p>
+          </div>
+          <div class="information-image"></div>
+        </section>
+        
+        <!-- FORM -->
+        
+        <section>
+          <form class="form">
+          <h2 class="form-topic">
+            Jesteś zainteresowany/na? Skontaktuj się z nami.
+          </h2>
+          <div class="form-group border">
+            <input
+            class="input"
+            type="text"
+            name="Name_Surname"
+            required="required"
+            placeholder="Imię, nazwisko"
+            />
+          </div>
+          <div class="form-group border">
+            <input
+            class="input"
+            name="E-mail"
+            type="email"
+            required="required"
+            placeholder="E-mail"
+            />
+          </div>
+          <div class="form-group border">
+            <input
+            class="input"
+            name="PhoneNumber"
+            type="text"
+            required="required"
+            placeholder="Telefon"
+          />
+        </div>
+        <div class="form-group border">
+          <select class=" form-select ">
+            <option class="option" disabled selected>Miasto, w którym szukam mieszkania</option>
+            <option class="option">Tychy</option>
+            <option class="option">Katowice</option>
+            <option class="option">Sosnowiec</option>
+          </select>
+        </div>
+        <div class="form-group group-check">
+          <input 
+          class="check"
+          type="checkbox"
+          id="checkbox"
+          name="check"
+          value="rules"
+          />
+          <label class="check-label" for="checkbox"
+          >* Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
+          przesyłania mi przez GRUPĘ DOMBUD (współadministratorzy),
+          informacji w celach nawiązania kontaktu i korespondencji, zgodnie
+          z postanowieniami RODO. Oświadczam, że zapoznałem/am się z
+          Zasadami Przetwarzania Danych z dnia 25 maja 2018 r. dostępnymi na
+          stronie internetowej www.dombud.pl i akceptuję ich postanowienia.
+          Pozostaję świadomy/a, że mogę w każdej chwili wycofać udzieloną
+          zgodę na przetwarzanie danych osobowych we wskazanym powyżej celu
+          poprzez wysłanie maila w tym przedmiocie na adres mailowy
+          dombud@dombud.pl.</label
+          >
+        </div>
+      </div>
+    </form>
+        <button class="form-button" onclick="document.getElementById('myModal').style.display='block'">
+          Wyślij formularz</button>
+          
+          
+        <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+          <div class="modal-content" >
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <p class="modal-information">Wiadomość została wysłana</p>
+            
+          </div>
+        </div>
+      </section>
+      <!-- NEWS -->
+
+    </main>
+    <section class="Aktułalności news">
+      <article class="news-wrapper">
+        <div class="news-wrapper_article">
+          <h1 >Tysiące zadowolenie klientów </h1>
+          <h2 class="news-discription">Usługi developerskie w Katowiacach</h2>
+          <p class="news-information">Cupcake ipsum dolor sit amet wafer sweet roll. Jelly beans tiramisu cake carrot cake gummi bears sesame snaps. Pudding carrot cake toffee donut wafer. Sweet topping jelly pie cheesecake marshmallow.</p>
+        </div>
+        <div class="news-wrapper_image first-image">
+          <button class="news-button">Sprawdź szczegóły</button>
+        </div>
+      </article>
+      <article class="news-wrapper">
+        <div class="news-wrapper_article">
+          <h1 >Najlepsze oferty</h1>
+          <h2 class="news-discription"></h2>
+          <p class="news-information">Bacon ipsum dolor amet ham hock short loin landjaeger rump ball tip buffalo tongue short ribs brisket pig kevin bacon meatloaf drumstick pork. Meatball ball tip porchetta, ham hock hamburger tail tenderloin tri-tip leberkas. </p>
+        </div>
+        <div class="news-wrapper_image last-image">
+          <button class="news-button">Zobacz więcej
+          </button>
+        </div>
+      </article>
+    </section>
+      
+    </body>
+    </html>
+    

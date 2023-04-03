@@ -1,0 +1,56 @@
+/* GradientPallet form */
+$gradient-form-from: #c7bb95;
+$gradient-form-to: #e1d8bb;
+/* GradientPallet button-form */
+$gradient-form-button-gold-from: #e4dbbf;
+$gradient-form-button-gold-half: #bcb18e;
+$gradient-form-button-gold-to: #95885e;
+
+$gradient-form-button-gray-from: #606676;
+$gradient-form-button-gray-half: #b1b3c0;
+$gradient-form-button-gray-to: #d3d6dd;
+/* Main Colors */
+$border: #c7bb95;
+$gold-color: #a79977;
+$white-color: #ffffff;
+$white-color-100: #fefefe;
+$gray-color: #b4b4b4;
+$gray-color-200: #888;
+$black-color-medium: #282529;
+$black-color: #000000;
+$border-color-form: #f2eee3;
+
+$gradient-form: transparent
+  linear-gradient(124deg, #{$gradient-form-from} 0%, #{$gradient-form-to} 100%)
+  0% 0% no-repeat padding-box;
+
+$gradient-button: linear-gradient(
+    97deg,
+    #{$gradient-form-button-gold-from} 0%,
+    #{$gradient-form-button-gold-half} 51%,
+    #{$gradient-form-button-gold-to} 100%
+  )
+  0% 0% no-repeat padding-box;
+
+$gradient-button-gray: linear-gradient(
+    97deg,
+    #{$gradient-form-button-gray-from} 0%,
+    #{$gradient-form-button-gray-half} 51%,
+    #{$gradient-form-button-gray-to} 100%
+  )
+  0% 0% no-repeat padding-box;
+
+$gradient-button-gray-clicked: linear-gradient(
+    97deg,
+    darken($gradient-form-button-gray-from, 10%) 0%,
+    darken($gradient-form-button-gray-half, 10%) 51%,
+    darken($gradient-form-button-gray-to, 10%) 100%
+  )
+  0% 0% no-repeat padding-box;
+
+$gradient-button-gold-clicked: linear-gradient(
+  97deg,
+  darken($gradient-form-button-gold-from, 10%) 0%,
+  darken($gradient-form-button-gold-half, 10%) 51%,
+  darken($gradient-form-button-gold-to, 10%) 100%
+);

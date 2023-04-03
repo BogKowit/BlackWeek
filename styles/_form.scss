@@ -1,0 +1,95 @@
+.form {
+  box-sizing: border-box;
+  width: 960px;
+  height: 720px;
+  padding-left: 140px;
+  padding-top: 110px;
+  margin-top: -65px;
+  background: $gradient-form;
+  @include flex(none, none);
+
+  &-topic {
+    width: 463px;
+    @include DmSansText(500, 40px);
+  }
+
+  &-select {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    @include PoppinsText(400, 18px, $black-color-medium);
+  }
+  &-group {
+    display: flex;
+    width: 530px;
+    height: 50px;
+    margin-bottom: 30px;
+
+    &:first-of-type {
+      margin-top: 30px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      all: initial;
+      @include PoppinsText(400, 18px, $black-color-medium);
+
+      &::placeholder {
+        @include PoppinsText(400, 18px, $black-color-medium);
+      }
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: 25px;
+      border: none;
+      background-color: $white-color;
+    }
+
+    input[type="checkbox"]:checked:before {
+      content: "\2714";
+      font-size: 20px;
+      color: $black-color-medium;
+      height: 30px;
+      line-height: 20px;
+      @include flex;
+    }
+
+    label[for="checkbox"] {
+      display: inline-flex;
+      @include PoppinsText(400, 11px, $black-color-medium);
+      line-height: 1.4;
+    }
+    label[for="checkbox"]:active {
+      color: $gray-color;
+    }
+  }
+  &-button {
+    background: $gradient-button;
+    border: 0;
+    width: 800px;
+    height: 100px;
+    @include DmSansText(700, 22px, black, uppercase);
+    cursor: pointer;
+    &:active, &:hover {
+      background: $gradient-button-gold-clicked;
+    }
+  }
+}
+
+.border {
+  position: relative;
+
+  &::before {
+    @include absolute(none);
+    background: $border-color-form;
+    width: 530px;
+    height: 2px;
+    z-index: 50;
+  }
+}

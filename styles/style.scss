@@ -1,0 +1,6 @@
+@import "reset", "fontFace", "colors", "mixins", "media", "header", "main",
+  "form", "modal", "news";
+
+h1 {
+  @include DmSansText(bold, 52px, $black-color-medium);
+}
